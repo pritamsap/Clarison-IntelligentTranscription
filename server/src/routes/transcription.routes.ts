@@ -1,12 +1,10 @@
 
-
 import { TranscriptionResponse } from '../types';
 import express, { Request, Response } from 'express';
 import multer from 'multer';
 import path from 'path';
 
 // making a sub router application
-
 const router = express.Router();
 
 // Configure multer for file uploads

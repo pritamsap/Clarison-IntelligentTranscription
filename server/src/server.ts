@@ -32,12 +32,14 @@ if (!fs.existsSync(uploadsDir)) {
 }
 
 // GET Route 
-app.get("/api/health", (req: Request, res: Response) => {
+app.get("/api/transcription", (req: Request, res: Response) => {
     res.json({
         message: 'Clarison is running!' 
     });
 });
 
+
+//
 app.use('/api', transcriptRoutes);
 
 // Start server
