@@ -94,6 +94,7 @@ export const AudioRecorder = ({ onTranscriptReceived }: AudioRecorderProps) => {
     setIsProcessing(true);
     try {
       const transcript = await transcribeAudio(audioBlob);
+      console.log('Got transcript:', transcript);
       onTranscriptReceived(transcript);
     } catch (error) {
       console.error('Transcription error:', error);

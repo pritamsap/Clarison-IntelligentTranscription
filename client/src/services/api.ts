@@ -18,7 +18,7 @@ export const transcribeAudio = async (audioBlob: Blob): Promise<string> => {
             'Content-Type': 'multipart/form-data',
         },
     });
-    return response.data.transcribe
+    return response.data.transcript
 }
 
 // Cleaning the text from filler later on
